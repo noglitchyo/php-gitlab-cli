@@ -1,0 +1,30 @@
+imports:
+    - { resource: services/parameters.yaml }
+
+services:
+    _defaults:
+        autowire: true
+        autoconfigure: true
+        public: false
+
+    Gitlabci\Command\:
+        resource: '../src/Command'
+        public: true
+        tags: [console.command]
+
+    Gitlabci\Output\:
+        resource: '../src/Output/*'
+        public: true
+
+    Gitlabci\Output\OutputFormatterResolver:
+        arguments:
+            - ['@Gitlabci\Output\JsonOutputFormatter', '@Gitlabci\Output\YamlOutputFormatter']
+
+    Gitlab\Client:
+        factory: ['Gitlab\Client', create]
+        arguments: ["%gitlab.url%", 'Gitlab\Ci\OutputFormatterResolverInterface']
+        calls:
+            - method: authenticate
+              arguments:
+                  - "%gitlab.token%"
+
