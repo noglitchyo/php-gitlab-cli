@@ -1,4 +1,0 @@
-parameters:
-    gitlab.url: "<GITLAB_URL>"
-    gitlab.token: "<GITLAB_TOKEN>"
-

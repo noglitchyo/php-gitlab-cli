@@ -13,11 +13,13 @@ Some shortcuts commands have been added to make life even more simple.
 
 You will need your Gitlab URL and an **access token**.
 
-- Copy the file *config/services/parameters.yml.dist* to parameters.yml and adjust with your settings. 
+- Copy the file *.env.dist* to .env and adjust with your settings. 
 
 - `composer install`
 
 - `php bin/console`
+
+You should be up and running.
 
 ## Available commands
 
@@ -29,6 +31,5 @@ You will need your Gitlab URL and an **access token**.
 - `merge-request:list`
 - `merge-request:wip`
 
-### Branches
 
 

@@ -1,0 +1,4 @@
+parameters:
+    gitlab.url: '%env(GITLAB_URL)%'
+    gitlab.token: "%env(GITLAB_TOKEN)%"
+
