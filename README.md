@@ -1,5 +1,10 @@
 # php-gitlab-cli
 
+![Docker Automated build](https://img.shields.io/docker/automated/noglitchyo/php-gitlab-cli.svg?style=flat-square)
+[![Docker Build Status](https://img.shields.io/docker/build/noglitchyo/php-gitlab-cli.svg?style=flat-square)](https://hub.docker.com/r/noglitchyo/php-gitlab-cli/builds/)
+[![license](https://img.shields.io/github/license/noglitchyo/php-gitlab-cli.svg?style=flat-square)](https://github.com/noglitchyo/php-gitlab-cli/blob/master/LICENSE)
+[![GitHub issues](https://img.shields.io/github/issues/noglitchyo/php-gitlab-cli.svg?style=flat-square)](https://github.com/noglitchyo/php-gitlab-cli/issues)
+
 *php-gitlab-cli* is a simple tool made to query your preferred Gitlab API from the command line.
 Designed at first to facilitate the configuration of workflow automation, it can easily be use for any other uses.
 
