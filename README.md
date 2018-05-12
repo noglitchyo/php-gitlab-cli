@@ -13,6 +13,14 @@ Some shortcuts commands have been added to make life even more simple.
 
 You will need your Gitlab URL and an **access token**.
 
+#### With Docker
+
+For more convenience php-gitlab-cli is fully dockerized.
+
+`docker run -it --env GITLAB_URL=<GITLAB_URL> --env GITLAB_TOKEN=<GITLAB_TOKEN> php-gitlab-cli <GITLAB_CLI_COMMAND>` `
+
+#### With sources
+
 - Copy the file *.env.dist* to .env and adjust with your settings. 
 
 - `composer install`
