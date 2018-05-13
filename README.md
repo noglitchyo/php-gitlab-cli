@@ -6,7 +6,7 @@
 [![GitHub issues](https://img.shields.io/github/issues/noglitchyo/php-gitlab-cli.svg?style=flat-square)](https://github.com/noglitchyo/php-gitlab-cli/issues)
 
 *php-gitlab-cli* is a simple tool made to query your preferred Gitlab API from the command line.
-Designed at first to facilitate the configuration of workflow automation, it can easily be use for any other uses.
+Designed at first to facilitate the configuration of workflow automation and continuous integration, it can easily be use for any other cases.
 
 API calls to Gitlab are made using the following API wrapper: https://github.com/m4tthumphrey/php-gitlab-api. 
 It exposes a number of methods available on the official Gitlab API: https://docs.gitlab.com/ee/api/
