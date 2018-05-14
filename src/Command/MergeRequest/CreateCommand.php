@@ -58,11 +58,8 @@ class CreateCommand extends GitlabCommand
         $title = $input->getArgument('title');
         $wipFlag = $input->getArgument('wip');
 
-        $helper = $this->getHelper('question');
-        $question = new ConfirmationQuestion('Continue with this action?', false);
-
         if ($wipFlag) {
-            $data['title'] = $this->handleWipStatus($wipFlag, $title);
+            $title = $this->handleWipStatus($wipFlag, $title);
         }
 
         try {
